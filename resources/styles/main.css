@@ -112,18 +112,11 @@ nav a {
     margin: 0 auto;
 }
 
-.waves-background {
+#waves-background {
     background-image: url('/images/waves.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    max-width: 100%;
-}
 
-.waves-background .content {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .cards-section {
