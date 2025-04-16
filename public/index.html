@@ -7,20 +7,66 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <nav>
-        <div class="absolute-centered-container">
-            <div class="logo"><a href="/"><img src="/images/header-logo.png" alt="Salt Song Logo" /></a></div>
-            <div class="menu">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Pricing</a>
-                <a href="#">Blog</a>
-                <a href="#">FAQ</a>
-                <a href="#" class="button" id="contact-button">Contact</a>
-                <a href="#" class="dark-mode-toggle"></a>
+
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="/images/header-logo.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!--<button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button>-->
+    </div>
+</header>
     <main>
         <div class="hero">
             <div class="hero-content">
@@ -87,17 +133,29 @@
                         Your journey includes design, development, hosting, and all hands on deck to keep your website running smoothly.                            
                     </div>
                     <div class="side-by-side">
-                        <div class="side-by-side-item"><h3>Hosting Included</h3>
-                            <p>Hosting fees are built into the monthly payment.</p>
+                        <div class="side-by-side-item">
+                            <div class="checkmark-container"><img src="/images/checkmark.png" alt="Checkmark" /></div>
+                            <div class="side-by-side-body"><h3>Hosting Included</h3>
+                                <p>Hosting fees are built into the monthly payment.</p>
+                            </div>
                         </div>
-                        <div class="side-by-side-item"><h3>Professionally Managed</h3>
-                            <p>Revisions and edits are included and can be made any time.</p>
+                        <div class="side-by-side-item">     
+                            <div class="checkmark-container"><img src="/images/checkmark.png" alt="Checkmark" /></div>
+                            <div class="side-by-side-body"><h3>Professionally Managed</h3>
+                                <p>Revisions and edits are included and can be made any time.</p>
+                            </div>
                         </div>
-                        <div class="side-by-side-item"><h3>Unbeatable Support</h3>
-                            <p>Call or email for support. No robots, no automated responses.</p>
+                        <div class="side-by-side-item">     
+                            <div class="checkmark-container"><img src="/images/checkmark.png" alt="Checkmark" /></div>
+                            <div class="side-by-side-body"><h3>Unbeatable Support</h3>
+                                <p>Call or email for support. No robots, no automated responses.</p>
+                            </div>
                         </div>
-                        <div class="side-by-side-item"><h3>Money Back Guarantee</h3>
-                            <p>If you're unhappy with the design, you get your money back and we cancel the contract.</p>
+                        <div class="side-by-side-item">     
+                            <div class="checkmark-container"><img src="/images/checkmark.png" alt="Checkmark" /></div>
+                            <div class="side-by-side-body"><h3>Money Back Guarantee</h3>
+                                <p>If you're unhappy with the design, you get your money back and we cancel the contract.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -238,7 +296,7 @@
         </div>
     </div>
 </main>
-    <footer>
+<!--    <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-column">
@@ -291,5 +349,79 @@
             </div>
         </div>
     </footer>
+-->
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1340">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <h2 class="cs-title"><img src="/images/footer-logo.png" alt="Salt Song Logo" /></h2>
+            <div class="cs-text">Just because you're small doesn't mean your online presence has to be! We'll create a website that makes some waves.</div>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/profile.php?id=61575267536415">
+                    <img class="cs-social-img" src="/images/fbook.png" alt="facebook">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" src="/images/insta.png" alt="instagram">
+                </a>
+                <a class="cs-social-link" aria-label="visit bluesky profile" href="">
+                    <img class="cs-social-img" src="/images/bsky.png" alt="bluesky">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Projects</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <!-- Contact Info -->
+            <span class="cs-header">Contact</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <div class="cs-text">
+                    1207 Delaware Ave.<br />
+                    Unit 209<br />
+                    Wilmington, DE 19806
+                    </div>
+                </li>
+
+                <li class="cs-li">
+                    <a class="cs-link" href="tel:7072040477">(707) 204-0477</a>
+                </li>
+
+                <li class="cs-li">
+                    <a class="cs-link" href="mailto:info@saltsong.com">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/email-1a.svg" alt="email icon" width="24" height="24">
+                        info@saltsong.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 <a href="" class="cs-credit-link" target="_blank">Salt Song, LLC</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+            <a href="" class="cs-bottom-link">Terms Of Use</a>
+        </div>
+    </div>
+</footer>
+    <script src="scripts/stiches.js"></script>
 </body>
 </html>
